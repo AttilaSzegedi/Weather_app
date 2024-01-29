@@ -4,6 +4,8 @@
   "description": "Weather app for JS in Cubix",
   "main": "app.js",
   "scripts": {
+    "start": "webpack server",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +15,7 @@
   "author": "Attila Szegedi",
   "license": "ISC",
   "dependencies": {
-    
+
   },
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
