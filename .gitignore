@@ -1,0 +1,4 @@
+# ignore all files in node modules directory named build
+node_modules/
+# ignore all files in build directory named build
+build/
