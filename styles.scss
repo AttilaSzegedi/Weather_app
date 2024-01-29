@@ -1,6 +1,5 @@
 :root{
     --font-color: #242424;
-    /* Variable for use font colo declaration */
     --primary-color: #00C4C4;
     --primary-light-color: #90DEDE;
     --secondary-color: #004545;
@@ -47,7 +46,7 @@ body{
   border-radius: 4px;
   width: 200px;
   padding: 0 8px;
-  background-color: rgba(255, 255, 255, 0,8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #city{
   flex: 3 1 auto;
@@ -70,15 +69,15 @@ button{
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
+  &:hover{
+      background-color: #008f8f;
+      color: white;
+  }
+  
+  &:focus{
+   outline:none;
+   background-color: #00c4c4;    
+   color:var(--font-color);
+  }
 }
 
-button:hover{
-    background-color: #008f8f;
-    color: white;
-}
-
-button:focus{
- outline:none;
- background-color: #00c4c4;    
- color:var(--font-color);
-}
