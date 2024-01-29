@@ -1,0 +1,84 @@
+:root{
+    --font-color: #242424;
+    /* Variable for use font colo declaration */
+    --primary-color: #00C4C4;
+    --primary-light-color: #90DEDE;
+    --secondary-color: #004545;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--font-color);
+}
+
+
+.header{
+    padding: 2px 24px;
+    background-color: var(--primary-color);
+}
+
+
+
+.searchbar{
+    background-color: var(--primary-light-color);
+    
+}
+
+.searchbar, .content{
+  padding: 16px;
+ 
+}
+
+.form-container>form{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.form-item{
+    margin-right: 16px;
+}
+
+.form-item >input{
+  line-height: 32px;
+  height: 32px;
+  border: 1px solid #747474;
+  border-radius: 4px;
+  width: 200px;
+  padding: 0 8px;
+  background-color: rgba(255, 255, 255, 0,8);
+}
+#city{
+  flex: 3 1 auto;
+}
+#city > input{
+    width: 100%;
+}
+
+.spacer{
+    flex: 1 1 auto
+}
+
+button{
+    height: 32px;
+    background: none;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #008f8f;
+    color: white;
+}
+
+button:focus{
+ outline:none;
+ background-color: #00c4c4;    
+ color:var(--font-color);
+}
