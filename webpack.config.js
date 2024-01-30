@@ -31,7 +31,7 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: DIST_DIR
+            contentBase: DIST_DIR
         },
     },
 }
