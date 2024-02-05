@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <script src="bundle.js"></script>
@@ -8,23 +9,28 @@
       </div>
         <div class="searchbar">
           <div class="form-container">
-            <form action="">
+            <form id="form" action="">
                <div id="city" class="form-item">
-                  <input type="text" placeholder="Város">
+                  <input id="city-input" required type="text" placeholder="Város">
                </div>
                <div id="date" class="form-item">
-                  <input type="date">
+                  <input id="date-input" required type="date">
                 </div>
                 <div class="spacer"></div>
                 <div id="search" class="form-item">
-                  <button type="submit">Keresés</button>
+                  <button type="reset">X</button>
+                  <button id="submit" type="submit">Keresés</button>
                 </div>
             </form>
           </div>
         </div>
-    
+    <div class="loader" id="loading-indicatior" style="display: none">Loading...</div>
+      <div id="error-massage" class="error-massage" style="display: none">
+        Hiba történt az adat betöltésben
+      </div>
     <div class="content">
+      <div class="Weather-container" id="cards-container"></div>
 
-
+    </div>
   </body>
 </html>
